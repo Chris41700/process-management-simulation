@@ -3,7 +3,7 @@
 #define PROCESS_H
 
 #include <iostream>
-#include <ctime>
+#include <vector>
 
 using namespace std;
 
