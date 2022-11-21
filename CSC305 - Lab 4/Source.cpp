@@ -11,10 +11,12 @@ int main() {
 	//Create a vector to store each process;
 	vector<Process> process(numOfProcesses);
 
+	//Prompt the user to enter the time require for each process
 	cout << "\nEnter the burst time for each process:" << endl;
 
-	//Store the pid for each process
+	//Store the 
 	for (int i = 0; i < numOfProcesses; i++) {
+		cin >> process[i].executionTime;
 		process[i].id = i + 1;
 	}
 }

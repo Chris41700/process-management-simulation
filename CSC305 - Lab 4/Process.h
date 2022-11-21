@@ -12,8 +12,8 @@ struct Process {
 	int priority;
 	double turnaroundTime;
 	double startTime;
-	double completionTime;
-	double executionTime;
+	int completionTime;
+	int executionTime;
 };
 
 enum Actions { stop, fcfs, priority, sjn };
