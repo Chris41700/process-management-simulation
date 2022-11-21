@@ -10,8 +10,8 @@ using namespace std;
 struct Process {
 	int id;
 	int priority;
-	double turnaroundTime;
-	double startTime;
+	int turnaroundTime;
+	int startTime;
 	int completionTime;
 	int executionTime;
 };
