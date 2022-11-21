@@ -57,13 +57,13 @@ int main() {
 			exit(0);
 			break;
 		case fcfs:
-			first_come_first_serve(process, numOfProcesses);
+			firstComeFirstServe(process, numOfProcesses);
 			break;
 		case priority:
-			process_priority(process, numOfProcesses);
+			processPriority(process, numOfProcesses);
 			break;
 		case sjn:
-			shortest_job_next(process, numOfProcesses);
+			shortestJobNext(process, numOfProcesses);
 			break;
 		}
 
