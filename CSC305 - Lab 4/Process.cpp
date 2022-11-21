@@ -12,7 +12,7 @@ void Process::calculateWaitingTime(vector<Process> process, int numOfProcesses) 
 
 void Process::calculateTurnaroundTime(vector<Process> process, int numOfProcesses) {
 	for (int i = 0; i < numOfProcesses; i++) {
-
+		process[i].turnaroundTime = process[i].executionTime + process[i].waitingTime;
 	}
 } 
 
