@@ -25,7 +25,7 @@ int main() {
 
 	//Store the arrival time for each process
 	for (int i = 0; i < numOfProcesses; i++) {
-		cin >> process[i].startTime;
+		cin >> process[i].arrivalTime;
 	}
 
 	//Prompt the user to set priority for each processes
@@ -34,10 +34,6 @@ int main() {
 	//Store the priority for each process
 	for (int i = 0; i < numOfProcesses; i++) {
 		cin >> process[i].priority;
-	}
-
-	for (int i = 0; i < numOfProcesses; i++) {
-		cout << process[i].id << '\t' << process[i].executionTime << '\t' << process[i].startTime << '\t' << process[i].priority << endl;
 	}
 
 	int action;
