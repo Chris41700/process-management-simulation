@@ -44,7 +44,7 @@ int main() {
 
 	//User menu to choose a process management algorithm
 	do {
-		cout << "\n================Process Management Algorithm Menu===============" << endl;
+		cout << "\n===================Process Management Algorithm Menu==================" << endl;
 		cout << "0 - Stop" << endl;
 		cout << "1 - First Come First Serve" << endl;
 		cout << "2 - Priority" << endl;
@@ -66,7 +66,6 @@ int main() {
 		//	shortestJobNext(process, numOfProcesses);
 		//	break;
 		}
-
 	} while (action != stop);
 
 	return 0;

@@ -24,12 +24,12 @@ void firstComeFirstServe(vector<Process> process, int numOfProcesses) {
 		process[i].turnaroundTime = process[i].completeTime - process[i].startTime;
 	}
 
-	cout << "\n===============First Come First Serve Algorithm===============" << endl;
+	cout << "\n=================First Come First Serve Algorithm=================" << endl;
 	cout << "Processes\tArrival Time\tCompletion Time\tTurnaround Time" << endl;
 	//Calculate the total turnaround time
 	for (int i = 0; i < numOfProcesses; i++) {
 		totalTurnaroundTime += process[i].turnaroundTime;
-		cout << process[i].id << '\t' << process[i].startTime << '\t' << process[i].completeTime << '\t' << process[i].turnaroundTime << endl;
+		cout << process[i].id << '\t\t' << process[i].startTime << '\t\t' << process[i].completeTime << '\t\t' << process[i].turnaroundTime << endl;
 	}
 	
 	averageTurnaroundTime = totalTurnaroundTime / numOfProcesses;
@@ -46,7 +46,6 @@ void firstComeFirstServe(vector<Process> process, int numOfProcesses) {
 	}
 
 	cout << "Average Turnaround Time: " << averageTurnaroundTime << endl;
-	cout << "\n=============================================================" << endl;
 }
 
 void processPriority(vector<Process> process, int numOfProcesses) {
