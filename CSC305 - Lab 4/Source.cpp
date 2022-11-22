@@ -59,12 +59,12 @@ int main() {
 		case fcfs:
 			firstComeFirstServe(process, numOfProcesses);
 			break;
-		case priority:
-			processPriority(process, numOfProcesses);
-			break;
-		case sjn:
-			shortestJobNext(process, numOfProcesses);
-			break;
+		//case priority:
+		//	processPriority(process, numOfProcesses);
+		//	break;
+		//case sjn:
+		//	shortestJobNext(process, numOfProcesses);
+		//	break;
 		}
 
 	} while (action != stop);
