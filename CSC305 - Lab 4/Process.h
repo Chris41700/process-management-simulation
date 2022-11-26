@@ -22,6 +22,8 @@ struct Process {
 enum Actions { stop, fcfs, priority, sjn };
 
 bool compareArrival(Process p1, Process p2);
+bool comparePriority(Process p1, Process p2);
+bool compareShortestExecution(Process p1, Process p2);
 void firstComeFirstServe(vector<Process> process, int numOfProcesses);
 void priorityScheduling(vector<Process> process, int numOfProcesses);
 void shortestJobNext(vector<Process> process, int numOfProcesses);
