@@ -23,7 +23,8 @@ enum Actions { stop, fcfs, priority, sjn };
 void calculateWaitingTime(vector<Process> process, int numOfProcesses);
 void calculateTurnaroundTime(vector<Process> process, int numOfProcesses);
 void firstComeFirstServe(vector<Process> process, int numOfProcesses);
-void processPriority(vector<Process> process, int numOfProcesses);
+bool priorityComparison(vector<Process> process, int numOfProcesses);
+void priorityScheduling(vector<Process> process, int numOfProcesses);
 void shortestJobNext(vector<Process> process, int numOfProcesses);
 
 #endif

@@ -14,18 +14,14 @@ void firstComeFirstServe(vector<Process> process, int numOfProcesses) {
 	int totalTurnaroundTime = 0;
 	int averageTurnaroundTime = 0;
 
-	//The waiting time for the first process is always 0
-	process[0].waitingTime = 0;
-	
+	//The first start time is the lowest arrival time
+	process[0].startTime = process[0].arrivalTime;
+	int temp = process[0].startTime;
 
-	//Calculate the starting time for each process
-	for (int i = 0; i < numOfProcesses; i++) {
-		process[i].startTime = 
-	}
-
-	//Calculate the waiting time for each process
+	//Calculate the start time for each process
 	for (int i = 1; i < numOfProcesses; i++) {
-		process[i].waitingTime = process[i - 1].executionTime + process[i - 1].waitingTime;
+		temp += process[i - 1].executionTime;
+		process[i].startTime = temp;
 	}
 
 	//Calculate the completion time for each process
@@ -62,7 +58,19 @@ void firstComeFirstServe(vector<Process> process, int numOfProcesses) {
 	cout << "Average Turnaround Time: " << averageTurnaroundTime << endl;
 }
 
-void processPriority(vector<Process> process, int numOfProcesses) {
+bool priorityComparison(Process a, Process b) {
+	return (a.priority > b.priority);
+}
+
+void priorityScheduling(vector<Process> process, int numOfProcesses) {
+	int totalTurnaroundTime = 0;
+	int averageTurnaroundTime = 0;
+	
+	//Calculate the turnaround time for each process
+	for (int i = 0; i < numOfProcesses; i++) {
+		process[i].turnaroundTime = (process[i].startTime + process[i].executionTime) - process[i].arrivalTime;
+	}
+
 
 }
 
