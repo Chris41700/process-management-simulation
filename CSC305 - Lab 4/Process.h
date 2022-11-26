@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -20,8 +21,8 @@ struct Process {
 
 enum Actions { stop, fcfs, priority, sjn };
 
+bool compareArrival(Process p1, Process p2);
 void firstComeFirstServe(vector<Process> process, int numOfProcesses);
-bool priorityComparison(vector<Process> process, int numOfProcesses);
 void priorityScheduling(vector<Process> process, int numOfProcesses);
 void shortestJobNext(vector<Process> process, int numOfProcesses);
 

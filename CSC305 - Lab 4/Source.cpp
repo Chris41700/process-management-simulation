@@ -58,9 +58,9 @@ int main() {
 		case priority:
 			priorityScheduling(process, numOfProcesses);
 			break;
-		//case sjn:
-		//	shortestJobNext(process, numOfProcesses);
-		//	break;
+		case sjn:
+			shortestJobNext(process, numOfProcesses);
+			break;
 		}
 	} while (action != stop);
 
